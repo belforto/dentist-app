@@ -2,6 +2,9 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { FabricJSCanvas, useFabricJSEditor } from 'fabricjs-react'
+import Editor from '../components/editor'
+
 
 const Home: NextPage = () => {
   return (
@@ -52,7 +55,7 @@ const Home: NextPage = () => {
           </a>
         </div>
       </main>
-
+<Editor/>
       <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
