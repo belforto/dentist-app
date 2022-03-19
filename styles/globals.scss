@@ -1,0 +1,60 @@
+/* Roboto is Material's default font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+$base-color: #6200ee;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: $base-color;
+}
+h1,h6{
+  color: #fff;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.canvas-container{
+  display: flex;
+  margin-inline: auto;
+}
+
+button{
+  position: relative;
+  overflow: hidden;
+  transition: background 400ms;
+  color: #fff;
+  background-color: $base-color;
+  padding: 1rem 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  outline: 0;
+  border: 0;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+canvas{
+  border-radius: 1.25rem;
+  margin-bottom: 1rem;
+ 
+}
+.dsg-container,.dsg-add-row{
+  margin-inline: 1rem;
+  border-radius: 0.7rem;
+}
+.dsg-add-row{
+  margin-top: 10px;
+}

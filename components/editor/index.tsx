@@ -12,6 +12,7 @@ const Editor: any = () => {
       height: 500,
       width: 1000,
       backgroundColor: "black",
+      preserveObjectStacking:true
     });
 
     //  var imgInstance = new fabric.Image.fromURL("/xray.jpg", (img: any) => {
@@ -25,17 +26,17 @@ const Editor: any = () => {
     //   canvi.renderAll();
     // });
 
-  const addRect = (canvi: any) => {
-    const rect = new fabric.Rect({
-      height: 280,
-      width: 200,
-      fill: "yellow",
-    });
-    canvi.add(rect);
-    canvi.renderAll();
-  };
+  // const addRect = (canvi: any) => {
+  //   const rect = new fabric.Rect({
+  //     height: 280,
+  //     width: 200,
+  //     fill: "yellow",
+  //   });
+  //   canvi.add(rect);
+  //   canvi.renderAll();
+  // };
   const addText = (canvi: any) => {
-    const   myText = new fabric.Text('18 17 16 15 14 13 12 11 21 22 23 24 25 26 27 28', {
+    const   myText = new fabric.IText('18 17 16 15 14 13 12 11 21 22 23 24 25 26 27 28', {
       underline: false,
       overline: false
     });
@@ -43,13 +44,13 @@ const Editor: any = () => {
     canvi.renderAll();
   };
   const addImg = (canvi: any) => {
-      fabric.Image.fromURL("/implant.jpg", (img: any) => {
+      fabric.Image.fromURL("/implant.png", (img: any) => {
       if (img.getElement() === undefined) {
         console.log("Failed to load image!");
         return;
       }
       // do something on success
-      img.scale(0.25).set("flipX", true);
+      img.scale(0.99).set("flipX", true);
       canvi.add(img);
       canvi.renderAll();
     });
@@ -77,14 +78,16 @@ const Editor: any = () => {
   }
   return (
     <div>
-      <h1>Fabric.js on React - fabric.Canvas</h1>
-      <button onClick={() => addRect(canvas)}>Rectangle</button>
+      <h1>Backend sustav za kreiranje ponuda</h1>
+      <h6>I izračun cijene</h6>
+      {/* <button onClick={() => addRect(canvas)}>Rectangle</button> */}
       <button onClick={() => addImg(canvas)}>Add Implant</button>
       <button onClick={() => addBgrPanoramicXRay(canvas)}>Add Panoramic X ray</button>
       <button onClick={() => addText(canvas)}>Add Numbering</button>
       <br />
       <br />
       <canvas id="canvas" />
+      <br />
       <button onClick={() => downloadImg()}>Download Img</button>
     </div>
   );
