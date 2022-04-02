@@ -3,17 +3,18 @@
 .container{
     // background: mediumslateblue;
     // background-image: url('/images/halftone-yellow.png');
-    @extend .gradientBgr;
+    // @extend .gradientBgr;
 
     background-repeat: repeat;
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background: $base-color-bright;
     // padding: 2rem;
 }
 
 .darkContainer{
-     background: $base-color-dark;
+     background: $base-color-bright;
     // background-image: url('/images/halftone-yellow.png');
     // background-repeat: repeat;
     margin-top: 12rem;

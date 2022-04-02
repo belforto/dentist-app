@@ -3,7 +3,7 @@
 
 .horiz {
   margin-inline: auto;
-    
+
     ul {
       width:100%;
       list-style:none;
@@ -16,7 +16,7 @@
     
         text-transform:uppercase;
         cursor:pointer;
-        color:$base-color-bright;
+        color:$base-color-mild;
         text-align:center;
         // border-radius:.75em;
         transition-duration: .3s;
@@ -55,7 +55,8 @@ background: radial-gradient(circle, rgba(255,255,255,1) 60%, rgba(0,0,0,1) 100%)
         }
     
         > a {
-          color:$base-color-bright;
+          color:$base-color-mild;
+          font-weight: 900;
           text-decoration:none;
           font-size: 1.4em;
           transition:color .3s ease-in-out;
