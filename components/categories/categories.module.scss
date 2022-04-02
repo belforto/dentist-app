@@ -1,7 +1,8 @@
+@import '/styles/theme';
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
 .horiz {
-    width: 100%;
+  margin-inline: auto;
     
     ul {
       width:100%;
@@ -15,7 +16,7 @@
     
         text-transform:uppercase;
         cursor:pointer;
-        color:rgba(255, 255, 255, .8);
+        color:$base-color-bright;
         text-align:center;
         // border-radius:.75em;
         transition-duration: .3s;
@@ -34,7 +35,7 @@
           right:0;
           border-radius:50%;
           box-shadow:
-            1em 1em 0 2em rgba(255, 255, 255, .5)
+            1em 1em 0 2em $base-color-bright;
           ;
         }
 
@@ -43,17 +44,18 @@
         }
     
         &:hover {
-            background-color:rgba(255, 255, 255, .8);
+          background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 60%, rgba(0,0,0,1) 100%);
             padding-left:3em;
             color: black;
     
             > a {
-              color:#fff;
+              color:$base-color-dark;
             }
         }
     
         > a {
-           color:rgba(255, 255, 255, .8);
+          color:$base-color-bright;
           text-decoration:none;
           font-size: 1.4em;
           transition:color .3s ease-in-out;
