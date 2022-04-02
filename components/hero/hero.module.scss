@@ -16,7 +16,7 @@
     //     background: rgb(63,94,251);
 // background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(0,0,0,1) 88%);
 background: rgb(109,99,253);
-background: radial-gradient(circle, rgba(109,99,253,1) 0%, rgba(0,0,0,1) 82%);
+background: radial-gradient(circle, rgba(109,99,253,1) 40%, $base-color-bright 92%);
 
     .textAndBtn{
       width: 60%;
