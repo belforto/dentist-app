@@ -17,7 +17,7 @@ const Hero: any = () => {
         </div>
       </div>
       <div className={styles.imgMain}>
-        <img className={styles.imgMainLogo} src={"/images/job.svg"} />
+        <img className={styles.imgMainLogo} src={"/images/job-hero.svg"} />
       </div>
     </section>
   );

@@ -7,13 +7,15 @@ import Categories from "../components/categories";
 import Hero from "../components/hero";
 import Search from "../components/search";
 import Card from "../components/card";
+import Footer from "../components/footer";
+
 
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.darkContainer}>
         <Categories />
-        <Hero />
+        <Hero /> 
         <Search />
         <div className={styles.cardsContainer}>
           <Card />
@@ -25,7 +27,9 @@ const Home: NextPage = () => {
           <Card />
           <Card />
         </div>
+
       </div>
+      <Footer />
     </div>
   );
 };

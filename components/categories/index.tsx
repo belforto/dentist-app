@@ -11,7 +11,7 @@ export const Categories = () => {
         <li><a href="#">Stream</a></li>
         <li><a href="#">Lab</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="/contact">Contact</a></li>
     </ul>
 </nav>
   );
