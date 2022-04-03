@@ -8,7 +8,7 @@ export default function index() {
   return (
     <div className={styles.container}>
       <Categories />
-      contact
+      contact 1
     </div>
   );
 }
