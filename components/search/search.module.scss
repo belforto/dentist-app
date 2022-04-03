@@ -1,0 +1,78 @@
+@import '/styles/theme';
+
+.searchFormBox{
+  margin-top: 2rem;
+  background: rgb(99,90,230);
+background: linear-gradient(137deg, rgba(99,90,230,1) 34%, rgba(255,255,255,1) 100%);
+  height: 146px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  form{
+    width: 500px;
+  }
+  
+}
+.searchForm{
+  // background:beige;
+}
+
+.searchBox{
+  transition: all 1s linear;
+  display: flex;
+  border-top:  2px solid $base-color-bright;
+  border-bottom:  2px solid $base-color-bright;
+  border-left:  2px solid $base-color-bright;
+  border-right:  2px solid $base-color-bright;
+
+  &:focus {
+    background: yellow;
+  }
+  // max-width: 500px;
+  flex-direction: row;
+  border-radius: $border-radius;
+  overflow: hidden;
+  
+  input{
+    background: none;
+    width: 100%;
+  }
+  ::placeholder {
+    color: $base-color-bright;
+    font-size: 18px;
+  }
+  .buttonSearch{
+    background: none;
+    border: none;
+    box-shadow: none;
+    width: 10px;
+    img{
+      // background: $base-color-bright;
+      // color: aqua;
+      svg{
+        // background: red;
+      }
+    }
+  }
+}
+.searchBox:focus-within {
+  transition: all 1s linear;
+  outline: none;
+   border-top:  none;
+  border-bottom:  2px solid $base-color-bright;
+  border-left:  none;
+  border-right:  none;
+  input{
+   border: none;
+   outline: 0px solid white;
+   caret-color: white;
+   line-height:normal;
+  }
+}
+.searchInput{
+border: none;
+
+}
+.buttonSearch{
+
+}
