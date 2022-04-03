@@ -9,7 +9,7 @@ const Hero: any = () => {
       className={styles.masthead}
     >
       <div className={styles.textAndBtn}>
-        <h6>same bla</h6>
+        <h2>Ovdje se nalaze najnoviji</h2>
         <h1>Poslovi za Tebe</h1>
         <div className={styles.buttons}>
           <button>Nađi posao</button>

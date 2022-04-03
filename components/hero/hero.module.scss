@@ -1,4 +1,5 @@
 @import '/styles/theme';
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 
 .masthead {
     display: flex;
@@ -19,7 +20,14 @@ background: rgb(109,99,253);
 background: radial-gradient(circle, rgba(109,99,253,1) 40%, $base-color-bright 92%);
 
     .textAndBtn{
+      flex: 1 1 20em;
       width: 60%;
+      h2{
+        font-family: 'Italianno', cursive;
+        color: $base-color-bright;
+        font-size: 25px;
+        font-weight: 100;
+      }
       .buttons{
         display: flex;
         justify-content: center;
@@ -29,6 +37,10 @@ background: radial-gradient(circle, rgba(109,99,253,1) 40%, $base-color-bright 9
           color: $base-color-bright;
           text-decoration: underline;
         }
+        a:hover {
+          color: $base-color-dark;
+          // color: $base-color-bright;
+        }
         *{
           margin: auto;
         }
@@ -36,6 +48,7 @@ background: radial-gradient(circle, rgba(109,99,253,1) 40%, $base-color-bright 9
       }
     }
     .imgMain{
+      flex: 2 2 20em;
       width: 40%;
       .imgMainLogo{
         height: 64%;
@@ -74,7 +87,7 @@ h1 {
     -moz-appearance: none;
   }
   button:hover {
-    background: $base-color-mild;
+    background: $base-color-dark;
     color: $base-color-bright;
   }
   button:focus {

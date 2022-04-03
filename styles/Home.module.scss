@@ -23,7 +23,19 @@
     border-radius: $border-radius;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    /* Using SCSS variables to store breakpoints */
+// $breakpoint-tablet: 768px;
+// @media (max-width: $breakpoint-tablet) {
+  
+//     overflow-x: hidden;
+// }
     // padding: 2rem;
 }
 
+.cardsContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4rem;
+}
