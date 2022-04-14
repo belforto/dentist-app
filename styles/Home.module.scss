@@ -6,7 +6,7 @@
     // @extend .gradientBgr;
 
     background-repeat: repeat;
-    height: 100vh;
+  
     display: flex;
     flex-direction: column;
     background: $base-color-bright;
@@ -14,6 +14,7 @@
 }
 
 .darkContainer{
+    overflow: hidden;
      background: $base-color-bright;
     // background-image: url('/images/halftone-yellow.png');
     // background-repeat: repeat;
@@ -38,4 +39,5 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 4rem;
+    height: 100%;
 }

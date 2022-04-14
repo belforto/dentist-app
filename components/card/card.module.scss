@@ -1,20 +1,20 @@
-.card-1 {
+.card:nth-child(1n+0) {
   background: radial-gradient(#1fe4f5, #3fbafe);
 }
 
-.card-2 {
+.card:nth-child(2n+1) {
   background: radial-gradient(#fbc1cc, #fa99b2);
 }
 
-.card-3 {
+.card:nth-child(3n+2) {
   background: radial-gradient(#76b2fe, #b69efe);
 }
 
-.card-4 {
+.card:nth-child(4n+0) {
   background: radial-gradient(#60efbc, #58d5c9);
 }
 
-.card-5 {
+.card:nth-child(5n+0) {
   background: radial-gradient(#f588d8, #c0a3e5);
 }
 
@@ -26,7 +26,7 @@
 }
 
 .card {
-  background: radial-gradient(#1fe4f5, #3fbafe);
+  // background: radial-gradient(#1fe4f5, #3fbafe);
   margin: 20px;
   padding: 20px;
   width: 500px;
@@ -86,3 +86,22 @@
   grid-row: 4/5;
   align-self: center;
 }
+
+
+// $repeat: 10; // 10 iterations
+// .card{
+//  @for $i from 1 through $repeat{
+//       &:nth-child(#{$i}) {
+//         @if $i < 3 { 
+//           background: blue;  
+//        }
+//        @else {
+//         background: red;  
+//     }
+//             // background: rgb(random(255),random(255),random(255)); 
+//             // $col1 : random(255);           
+//             // $col2 :random(255);           
+//             // background: radial-gradient("blue", "red");           
+//       }
+//     }
+//   }
