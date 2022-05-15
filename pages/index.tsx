@@ -8,12 +8,14 @@ import Hero from "../components/hero";
 import Search from "../components/search";
 import Card from "../components/card";
 import Footer from "../components/footer";
+import { FETCH_ALL_JOBS_URL } from "../components/util/Endpoints";
 
 
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.darkContainer}>
+        {JSON.stringify(FETCH_ALL_JOBS_URL)}
         <Categories />
         <Hero /> 
         <Search />
