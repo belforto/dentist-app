@@ -16,3 +16,18 @@ $border-radius: 32px;
     rgba(0, 0, 0, 1) 82%
   );
 }
+
+// media queries
+$screen-small: 360px;
+$screen-medium: 600px;
+$screen-large: 1024px;
+$screen-xlarge: 1270px;
+$screen-xxlarge: 1440px;
+
+$breakpoints: (
+  small: $screen-small,
+  medium: $screen-medium,
+  large: $screen-large,
+  xlarge: $screen-xlarge,
+  xxlarge: $screen-xxlarge,
+);
