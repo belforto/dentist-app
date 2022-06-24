@@ -1,4 +1,5 @@
 @import '/styles/theme';
+@import '/styles/include';
 
 .container{
     // background: mediumslateblue;
@@ -16,28 +17,16 @@
 .darkContainer{
     overflow: hidden;
      background: $base-color-bright;
-    // background-image: url('/images/halftone-yellow.png');
-    // background-repeat: repeat;
     margin-top: 12rem;
     margin-inline: 3rem;
     height: 100%;
     border-radius: $border-radius;
     display: flex;
     flex-direction: column;
-    /* Using SCSS variables to store breakpoints */
-// $breakpoint-tablet: 768px;
-// @media (max-width: $breakpoint-tablet) {
+    @include media("<large") {
+        margin-inline: 0;
+      }
   
-//     overflow-x: hidden;
-// }
-    // padding: 2rem;
 }
 
-.cardsContainer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 4rem;
-    height: 100%;
-}
+
