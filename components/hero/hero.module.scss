@@ -17,6 +17,7 @@
   background-size: cover !important;
   background: rgb(131,58,180);
   background: linear-gradient(90deg, #1fe4f5 0%, #3fbafe 54%, #60efbc 100%);
+  clip-path: ellipse(47% 215% at 50% 35%);
 
   @include media("<large") {
 
