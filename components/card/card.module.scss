@@ -27,10 +27,12 @@
 
 .card {
   // background: radial-gradient(#1fe4f5, #3fbafe);
+  overflow: hidden;
   margin: 20px;
   padding: 20px;
   max-width: 500px;
   min-height: 200px;
+  height: 600px;
   display: grid;
   grid-template-rows: 20px 50px 1fr 50px;
   border-radius: 10px;
