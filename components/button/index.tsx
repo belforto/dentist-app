@@ -15,10 +15,10 @@ const Button: any = () => {
   const focusAndBlurEventHandler = (event: any) => {
     console.log("click", focusOnSearch, event);
     if (!focusOnSearch) {
-      searchClassRef?.current?.classList.add(styles.active);
+      (searchClassRef?.current as any)?.classList.add(styles.active);
       setFocusOnSearch(true);
     } else if (focusOnSearch) {
-      searchClassRef?.current?.classList.remove(styles.active);
+      (searchClassRef?.current as any)?.classList.remove(styles.active);
       setFocusOnSearch(false);
     }
   };
@@ -57,7 +57,7 @@ const Button: any = () => {
       />
       <p ref={searchClassPRef}>{textFromInputField}</p>
 
-      {!textFromInputField && <span>Search</span>}
+      {!textFromInputField && <span>Traži Posao</span>}
     </div>
   );
 };
