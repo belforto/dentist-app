@@ -12,12 +12,13 @@ import { FETCH_ALL_JOBS_URL } from "../components/util/Endpoints";
 import CardContainer from "../components/card/cardContainer/cardContainer";
 import { dbCallFetchJobs } from "./api/getJobs";
 import Button from "../components/button";
+import Login from "../components/login/Login";
 
 const Home: NextPage = ({jobs}:any) => {
   return (
     <div className={styles.container}>
       <div className={styles.darkContainer}>
-       
+       <Login/>
         <Categories />
         <Hero />
         <Search />

@@ -2,8 +2,9 @@ import "../styles/globals.scss";
 import type { AppProps } from "next/app";
 import AppContext from "../components/util/state/AppContext";
 import { useState } from "react";
+import { SessionProvider } from "next-auth/react";
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
   const [searchString, setSearchString] = useState(null);
 
   return (
@@ -15,7 +16,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         handleSearchStringChange: setSearchString,
       }}
     >
-      <Component {...pageProps} />
+      <SessionProvider session={session}>
+        <Component {...pageProps} />
+      </SessionProvider>
     </AppContext.Provider>
   );
 }

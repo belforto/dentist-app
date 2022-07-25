@@ -5,6 +5,8 @@ import { Categories } from "../../components/categories";
 import Hero from "../../components/hero";
 import  { dbCallFetchJobs } from "../api/getJobs";
 import CardContainer from "../../components/card/cardContainer/cardContainer";
+import { requireAuthentication } from "../../components/util/auth";
+import { GetServerSidePropsContext } from "next/types";
 
 export default function index({jobs}:any) {
   // console.log('sadfghj: ', jobs)
@@ -21,24 +23,11 @@ export default function index({jobs}:any) {
 }
 
 
-export async function getServerSideProps({ req, res ,query}:any) {
-  // console.log('req: ', query)
-  
+export const  getServerSideProps=  requireAuthentication(async(context: GetServerSidePropsContext) =>{
   let response = await  dbCallFetchJobs(10,0)
-  // console.log('response: ',  response)
-  // console.log( JSON.stringify(response).substring(0,100))
-  //fetch(`${server}/api/getJobs`);
-// let jobs = await response.json();
-// console.log('jobs: ', response)
-
-  // res.setHeader(
-  //   'Cache-Control',
-  //   'public, s-maxage=10, stale-while-revalidate=59'
-  // )
-
   return {
     props: {
       jobs:(response)
     },
   }
-}
+})
